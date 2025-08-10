@@ -1,0 +1,377 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa; /* Light background */
+  color: #333; /* Dark text color */
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: #1e1e1e; /* Dark background */
+  color: #f5f7fa; /* Light text color */
+}
+
+/* Navbar */
+.navbar {
+  background: #517ed1; /* Navbar background */
+  color: #fff; /* Navbar text color */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.dark-mode .navbar {
+  background: #121212; /* Dark mode navbar background */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #657bdf, #9bdaae); /* Hero background (same for both modes) */
+  color: #fff; /* Hero text color (always light) */
+}
+
+body.dark-mode .hero {
+  background: linear-gradient(135deg, #121212, #333); /* Dark mode hero background */
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  background: #f5f7fa; /* Light background */
+  color: #333; /* Dark text color */
+}
+
+body.dark-mode section {
+  background: #1e1e1e; /* Dark mode background */
+  color: #f5f7fa; /* Light text color */
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: inherit; /* Inherits the body text color */
+}
+
+h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #1e3c72;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body.dark-mode h2::after {
+  background: #9bdaae; /* Dark mode section title underline */
+}
+
+/* Skills Section */
+.skills {
+  background: #f5f7fa; /* Light background */
+  color: #333; /* Dark text color */
+}
+
+body.dark-mode .skills {
+  background: #1e1e1e; /* Dark mode background */
+  color: #f5f7fa; /* Light text color */
+}
+
+.skills h2 {
+  color: #1e3c72; /* Section title color */
+}
+
+body.dark-mode .skills h2 {
+  color: #9bdaae; /* Dark mode section title color */
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skill-item {
+  background: rgba(30, 60, 114, 0.1);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: transform 0.3s, background 0.3s;
+}
+
+body.dark-mode .skill-item {
+  background: rgba(155, 218, 174, 0.1); /* Dark mode skill item background */
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  background: rgba(30, 60, 114, 0.2);
+}
+
+body.dark-mode .skill-item:hover {
+  background: rgba(155, 218, 174, 0.2); /* Dark mode skill item hover background */
+}
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-icon span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+body.dark-mode .progress-bar {
+  background: #333; /* Dark mode progress bar background */
+}
+
+.progress {
+  height: 100%;
+  background: #657bdf;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+body.dark-mode .progress {
+  background: #9bdaae; /* Dark mode progress bar */
+}
+
+/* Projects Section */
+.projects {
+  background: #f5f7fa; /* Light background */
+  color: #333; /* Dark text color */
+}
+
+body.dark-mode .projects {
+  background: #1e1e1e; /* Dark mode background */
+  color: #f5f7fa; /* Light text color */
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-item {
+  background: rgba(30, 60, 114, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s, background 0.3s;
+}
+
+body.dark-mode .project-item {
+  background: rgba(155, 218, 174, 0.1); /* Dark mode project item background */
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+  background: rgba(30, 60, 114, 0.2);
+}
+
+body.dark-mode .project-item:hover {
+  background: rgba(155, 218, 174, 0.2); /* Dark mode project item hover background */
+}
+
+.project-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.project-item p {
+  margin: 0 0 10px;
+}
+
+.project-item a {
+  color: #1e3c72;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+body.dark-mode .project-item a {
+  color: #9bdaae; /* Dark mode project item link color */
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+.project-item strong {
+  color: #1a1a1a;
+}
+
+body.dark-mode .project-item strong {
+  color: #f5f7fa; /* Dark mode project item strong text color */
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.project-links a {
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* GitHub Link */
+.github-link {
+  background: #4a90e2; /* Updated background color for better visibility */
+  color: #fff; /* Ensure text color is white for visibility */
+}
+
+body.dark-mode .github-link {
+  background: #333; /* Dark mode GitHub link background */
+  color: #fff; /* Ensure text color is white for visibility */
+}
+
+.github-link:hover {
+  background: #357ab8; /* Updated hover background color for better visibility */
+}
+
+body.dark-mode .github-link:hover {
+  background: #444; /* Dark mode GitHub link hover background */
+}
+
+/* Demo Link */
+.demo-link {
+  background: #50e3c2; /* Updated background color for better visibility */
+  color: #fff; /* Ensure text color is white for visibility */
+}
+
+body.dark-mode .demo-link {
+  background: #444; /* Dark mode demo link background */
+  color: #fff; /* Ensure text color is white for visibility */
+}
+
+.demo-link:hover {
+  background: #3bbfa1; /* Updated hover background color for better visibility */
+}
+
+body.dark-mode .demo-link:hover {
+  background: #555; /* Dark mode demo link hover background */
+}
+
+/* Buttons */
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #1e3c72;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+}
+
+body.dark-mode .button {
+  background: #333; /* Dark mode button background */
+}
+
+.button:hover {
+  background: #16325c;
+  transform: scale(1.05);
+}
+
+body.dark-mode .button:hover {
+  background: #444; /* Dark mode button hover background */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease-in-out;
+}

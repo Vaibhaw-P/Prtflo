@@ -1,0 +1,56 @@
+.experience {
+  padding: 80px 20px;
+  background: #f5f7fa; /* Light background */
+  color: #333; /* Dark text color */
+}
+
+body.dark-mode .experience {
+  background: #1e1e1e; /* Dark mode background */
+  color: #f5f7fa; /* Light text color */
+}
+
+.experience h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: inherit; /* Inherits the body text color */
+}
+
+.experience-list {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-item {
+  background: rgba(30, 60, 114, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s, background 0.3s;
+}
+
+body.dark-mode .experience-item {
+  background: rgba(155, 218, 174, 0.1); /* Dark mode experience item background */
+}
+
+.experience-item:hover {
+  transform: translateY(-10px);
+  background: rgba(30, 60, 114, 0.2);
+}
+
+body.dark-mode .experience-item:hover {
+  background: rgba(155, 218, 174, 0.2); /* Dark mode experience item hover background */
+}
+
+.experience-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.experience-item p {
+  margin: 0 0 10px;
+}

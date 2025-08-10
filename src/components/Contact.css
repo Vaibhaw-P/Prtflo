@@ -1,0 +1,66 @@
+.contact {
+  padding: 80px 20px;
+  background: #f5f7fa; /* Light background */
+  color: #333; /* Dark text color */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+body.dark-mode .contact {
+  background: #1e1e1e; /* Dark mode background */
+  color: #f5f7fa; /* Light text color */
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: inherit; /* Inherits the body text color */
+}
+
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-info p:hover {
+  transform: scale(1.05);
+  color: #6083c5;
+}
+
+.contact-info a {
+  color: #658bd3;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+body.dark-mode .contact-info a {
+  color: #9bdaae; /* Dark mode link color */
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #ff6347; /* Change color on hover */
+}
+
+.contact-info a:focus {
+  outline: 2px dashed #6590e0;
+  outline-offset: 4px;
+}
+
+/* Animation for contact section */
+.contact.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,56 @@
+.education {
+  padding: 80px 20px;
+  background: #f5f7fa; /* Light background */
+  color: #333; /* Dark text color */
+}
+
+body.dark-mode .education {
+  background: #1e1e1e; /* Dark mode background */
+  color: #f5f7fa; /* Light text color */
+}
+
+.education h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: inherit; /* Inherits the body text color */
+}
+
+.education-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.education-item {
+  background: rgba(30, 60, 114, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s, background 0.3s;
+}
+
+body.dark-mode .education-item {
+  background: rgba(155, 218, 174, 0.1); /* Dark mode education item background */
+}
+
+.education-item:hover {
+  transform: translateY(-10px);
+  background: rgba(30, 60, 114, 0.2);
+}
+
+body.dark-mode .education-item:hover {
+  background: rgba(155, 218, 174, 0.2); /* Dark mode education item hover background */
+}
+
+.education-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.education-item p {
+  margin: 0 0 10px;
+}
