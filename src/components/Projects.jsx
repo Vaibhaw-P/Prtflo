@@ -5,14 +5,12 @@ const Projects = () => {
   const projects = [
     {
       title: 'Chatssssss',
-      description: 'chatssssss.netlify.app is a responsive web-based chat interface designed using modern web technologies',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'Netlify', 'Vercel',],
+      technologies: ['HTML', 'CSS', 'JavaScript','Node', 'Netlify', 'Vercel',],
       github: 'https://github.com/Vaibhaw-P/Chat_App-Frontend',
       demo: 'https://Chatssssss.netlify.app',
     },
     {
       title: 'Pokedexii',
-      description: 'pokedexii.netlify.app is a simple Pokédex web app that fetches Pokémon data using JavaScript and displays it through HTML/CSS interface.',
       technologies: ['HTML', 'CSS', 'JavaScript',],
       github: 'https://github.com/Vaibhaw-P/Pokedex',
       demo: 'https://Pokedexii.netlify.app',
